@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Message_Form</class>
+ <widget class="QDialog" name="Message_Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap');
+
+QDialog{ 
+	background-color: #dedede;
+	font-family: 'Koulen', cursive;
+}
+
+QLabel {
+	padding: 1px;
+	background-color: #c7c7c7;
+	border-radius: 3px;
+}
+
+QTextBrowser {
+	background-color: #f9f9f9;
+	border: 1px solid #c9c9c9;
+}
+
+QPushButton{
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #b5b5b5;
+	background-color: #b5b5b5;
+}
+QPushButton:hover{
+	border-radius: 3px;
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}</string>
+  </property>
+  <widget class="QLabel" name="sender_label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>500</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>Title</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title_label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>45</y>
+     <width>250</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	background-color: transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>Sender</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="body_textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>500</width>
+     <height>270</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;BODY&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>345</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>Attachments:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="raw_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Raw</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="processed_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>370</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Processed</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

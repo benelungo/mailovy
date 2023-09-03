@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login_Form</class>
+ <widget class="QDialog" name="Login_Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>411</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap');
+
+QDialog{ 
+background-color: #dedede;
+font-family: 'Koulen', cursive;
+}
+
+QLineEdit{
+    width: 100%;
+    height: 20px;
+    padding: 3px;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+QLineEdit::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+QLineEdit:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #aaaaaa;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+QPushButton{
+	border: 1px solid;
+	padding: 5px;
+	margin: 0px 30px;
+	border-radius: 3px;
+	border-color: #b5b5b5;
+	background-color: #b5b5b5;
+}
+QPushButton:hover{
+	border-radius: 3px;
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>1</y>
+     <width>151</width>
+     <height>227</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item row="1" column="0">
+     <widget class="QLabel" name="logo_label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mailovy</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="Login_Button">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="Login_LineEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Login</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="IMAP_key_LineEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>IMAP key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>30</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0">
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>30</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="shadow_label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>-79</y>
+     <width>171</width>
+     <height>308</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #c9c9c9;
+border: 1px solid;
+border-color: transparent;
+border-radius: 2px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1.5, stop:0 #dedede, stop:1 #b5b5b5);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>shadow_label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

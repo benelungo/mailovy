@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>677</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>677</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Mailovy</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap');
+
+QMainWindow{ background-color: #dedede ;}
+
+QRadioButton{padding: 2px 2px 2px 2px;
+						mardin: 0px 0px 1px 0px;
+						font-family: 'Koulen', cursive;}
+
+QRadioButton:hover {	border-color: #b5b5b5;
+                                    border-radius: 3px;
+                                    background-color: #b5b5b5;}
+
+QLabel{font-family: 'Koulen', cursive;}
+
+QPushButton{
+background-color: transparent;
+}
+
+QPushButton:hover {	border-color: #b5b5b5;
+                                    border-radius: 3px;
+                                    background-color: #b5b5b5;}
+
+
+
+</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>111</y>
+      <width>741</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="messages_verticalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="message1_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title1_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content1_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content1</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message2_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title2_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content2_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message3_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title3_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content3_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content3</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message4_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title4_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title4</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content4_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content4</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message5_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title5_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title5</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content5_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content5</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message6_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title6_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title6</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content6_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content6</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message7_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title7_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title7</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content7_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content7</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message8_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title8_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title8</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content8_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content8</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message9_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title9_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title9</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content9_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content9</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="message10_verticalLayout">
+       <item>
+        <widget class="QLabel" name="Title10_label">
+         <property name="font">
+          <font>
+           <family>Koulen,cursive</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+border: 1px solid;
+border-radius: 4px;
+border-color: #b5b5b5;
+background-color: #b5b5b5;
+margin: 0px;
+padding: 2px;
+}
+QLabel:hover {
+	border-color: #a5a5a5;
+	background-color: #a5a5a5;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Title10</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Content10_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{ 
+margin: 0px;
+padding: 1px 1px 1px 0px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Content10</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="right_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>955</x>
+      <y>69</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../data/images/chevron_right.png</normaloff>../../../data/images/chevron_right.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="left_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>861</x>
+      <y>69</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../data/images/chevron_left.png</normaloff>../../../data/images/chevron_left.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="page_label">
+    <property name="geometry">
+     <rect>
+      <x>891</x>
+      <y>69</y>
+      <width>61</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Koulen,cursive</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>1-10</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="messages_label">
+    <property name="geometry">
+     <rect>
+      <x>242</x>
+      <y>69</y>
+      <width>71</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Koulen,cursive</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Messages</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>111</y>
+      <width>181</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QRadioButton" name="incomin_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+         <stylestrategy>PreferDefault</stylestrategy>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Incoming</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="sent_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Sent</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="junk_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Junk</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="archive_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Archive</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="deleted_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Deleted</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="notes_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Notes</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="drafts_mailbox_radioButton">
+       <property name="font">
+        <font>
+         <family>Koulen,cursive</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Drafts</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>319</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="mailbox_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>150</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Koulen,cursive</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Mailbox</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>206</x>
+      <y>69</y>
+      <width>31</width>
+      <height>569</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>100</y>
+      <width>771</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gradient_top_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #b5b5b5, stop:1 #dedede);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gradient_top_label_2">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>636</y>
+      <width>1011</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #dedede, stop:1 #b5b5b5);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo_label">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>14</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Koulen,cursive</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">@import url('https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap');
+QLabel{
+font-family: 'Koulen', cursive;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../data/images/mailovy_logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>92</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logout_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>955</x>
+      <y>10</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-color: transparent;
+background-color: transparent;
+}
+QPushButton:hover{
+border-radius: 3px;
+border-color: #dedede;
+background-color: #dedede;
+
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../data/images/logout.png</normaloff>../../../data/images/logout.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download_mail_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>925</x>
+      <y>10</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-color: transparent;
+background-color: transparent;
+}
+QPushButton:hover{
+border-radius: 3px;
+border-color: #dedede;
+background-color: #dedede;
+
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../data/images/download_for_offline.png</normaloff>../../../data/images/download_for_offline.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="open_mail_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>895</x>
+      <y>10</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-color: transparent;
+background-color: transparent;
+}
+QPushButton:hover{
+border-radius: 3px;
+border-color: #dedede;
+background-color: #dedede;
+
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../data/images/folder_open.png</normaloff>../../../data/images/folder_open.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>831</x>
+      <y>69</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../data/images/sync.png</normaloff>../../../data/images/sync.png</iconset>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>39</y>
+      <width>960</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{ 
+	background-color: transparent;
+                     }
+
+QComboBox::drop-down { 
+	subcontrol-origin: padding; 
+	border: 0px;
+                     }
+
+QComboBox QAbstractItemView {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid black;
+	border-right: 1px solid qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:1 #dedede, stop:0 black);
+	border-left: 1px solid qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:1 #dedede, stop:0 black);
+	background-color: #dedede;
+    selection-background-color: #b5b5b5;
+}
+</string>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>qqeewwrr15@gmail.com</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>dqwdqwqwqwqwqwqwqwqwqwqwqwqwqwqw</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mailovy.analisis@ukr.net</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <zorder>gradient_top_label</zorder>
+   <zorder>gradient_top_label_2</zorder>
+   <zorder>verticalLayoutWidget_2</zorder>
+   <zorder>right_pushButton</zorder>
+   <zorder>left_pushButton</zorder>
+   <zorder>page_label</zorder>
+   <zorder>messages_label</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>mailbox_label</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>logo_label</zorder>
+   <zorder>line_3</zorder>
+   <zorder>logout_pushButton</zorder>
+   <zorder>download_mail_pushButton</zorder>
+   <zorder>open_mail_pushButton</zorder>
+   <zorder>refresh_pushButton</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
